@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Site</title>
+</head>
+<body>
+  <h1>Welcome</h1>
+  <p>This is my first GitHub Pages site.</p>
+
+  <!-- These buttons map to funnel steps. For now they just log to the
+       browser console. Later you swap logEvent for a real analytics call. -->
+  <button onclick="logEvent('view_product')">View product</button>
+  <button onclick="logEvent('add_to_cart')">Add to cart</button>
+  <button onclick="logEvent('start_checkout')">Start checkout</button>
+
+  <script>
+    // Placeholder event tracker. Open the browser console (F12) to see events.
+    // Replace the body with your GA4 / Mixpanel / PostHog call when ready.
+    function logEvent(name) {
+      console.log("event:", name, new Date().toISOString());
+    }
+  </script>
+</body>
+</html>
